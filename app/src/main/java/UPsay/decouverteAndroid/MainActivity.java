@@ -1,6 +1,7 @@
 package UPsay.decouverteAndroid;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void dessin(android.view.View view){
+        TextView editText = findViewById(R.id.monTexte);
+        editText.setText(R.string.yes_text);
     }
 }
